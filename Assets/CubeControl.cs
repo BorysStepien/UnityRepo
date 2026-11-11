@@ -16,5 +16,20 @@ public class CubeControl : MonoBehaviour
         {
             transform.position += 10f * Vector3.up * Time.deltaTime;
         }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position += 10f * Vector3.left * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position += 10f * Vector3.right * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.position += 10f * Vector3.down * Time.deltaTime;
+        }
     }
 }
